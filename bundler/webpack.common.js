@@ -79,13 +79,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-module.exports = {
+ module.exports = {
   entry: path.resolve(__dirname, "../src/script.js"),
   output: {
     filename: "bundle.[contenthash].js",
     path: path.resolve(__dirname, "../dist"),
-    publicPath: "/",
-    clean: true,
   },
   devtool: "source-map",
   plugins: [
